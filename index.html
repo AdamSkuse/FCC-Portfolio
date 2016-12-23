@@ -7,16 +7,52 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
 
+  <style>
+    body { 
+      padding-top: 65px;
+    }
+  </style>
 
   <body>
-    <div class="container">
-      <div class="page-header">
-        <h1>Adam's portfolio page</h1>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-
-
+    <div class="container">
+        <h1>Adam's portfolio page</h1>
+        <p>Hi, my name is Adam. I am a copywriter and comedian by trade who is dabbling in front-end development, having completed a whirlwind tour of full-stack dev through a coding bootcamp. This is my first full project using Bootstrap: a somewhat sparse portfolio page.</p>
+        <a href="#" class="btn btn-default btn-lg">Github</a>
+        <a href="#" class="btn btn-default btn-lg">LinkedIn</a>
+        <a href="#contact" class="btn btn-default btn-lg">Twitter</a>
     </div>
+
+    <div class="container">
+        <h2>Recent projects</h2>
+    </div>
+
+    <div class="container">
+      <h2 id="contact">Contact me</h2>
+    </div>
+
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
