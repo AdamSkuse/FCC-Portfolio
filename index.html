@@ -21,6 +21,28 @@
     .project-box {
       padding-top: 30px;
     }
+
+    .well {
+      background-color: #0c9;
+      border-color: #0c9;
+    }
+
+
+    .bg-1 {
+    background-color: #993333;
+    color: #ffffff;
+    }
+
+    .bg-2 {
+      background-color: #9fc;
+      color: #fff;
+    }
+
+    .bg-3 {
+    background-color: #474e5d;
+    color: #ffffff;
+    }
+
   </style>
 
   <body>
@@ -43,7 +65,8 @@
       </div>
     </nav>
 
-    <div class="container">
+<div class="container-fluid bg-1">
+    <div class="container text-center bg-1">
         <h1>Adam's portfolio page</h1>
         <p>Hi, my name is Adam. I am a copywriter and comedian by trade who is dabbling in front-end development, having completed a whirlwind tour of full-stack dev through a coding bootcamp. This is my first full project using Bootstrap: a somewhat sparse portfolio page.</p>
         <a href="#" class="btn btn-default btn-lg">Github</a>
@@ -51,8 +74,10 @@
         <a href="#" class="btn btn-default btn-lg">Twitter</a>
         <a href="#" class="btn btn-default btn-lg">Tumblr</a>
     </div>
+</div>
 
-    <div class="container" id="projects">
+<div class="container-fluid bg-2">
+    <div class="container bg-2" id="projects">
         <h2>Recent projects</h2>
         <!-- Project 1 -->
           <div class="row project-box">
@@ -68,7 +93,7 @@
           <!-- Project 2 -->
             <div class="row project-box">
               <div class="col-xs-5 well">
-                <img src="assets/images/argbnb.png" class="img-responsive" alt="ArrrrgBnB">
+                <img src="assets/images/argbnb.png" class="img-responsive" style="display:inline" alt="ArrrrgBnB">
               </div>
               <div class="col-xs-7">
                 <h4 class="text-uppercase">ArrrrgBnB</h4>
@@ -90,7 +115,7 @@
 
     </div>
 
-    <div class="container">
+    <div class="container bg-3">
       <h2 id="contact">Contact me</h2>
       <form id="contact-form" role="form">
         <div class="form-group">
