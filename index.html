@@ -3,19 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Adam's Portfolio</title>
+    <title>Adam&rsquo;s Portfolio</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
 
   <style>
-    body { 
+    body {
       padding-top: 65px;
+    }
+
+    .container {
+      padding-right: 200px;
+      padding-left: 200px;
+      padding-bottom: 60px;
+    }
+
+    .project-box {
+      padding-top: 30px;
     }
   </style>
 
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
@@ -26,7 +36,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">ABOUT</a></li>
-            <li><a href="#">PROJECTS</a></li>
+            <li><a href="index.html#projects">PROJECTS</a></li>
             <li><a href="index.html#contact">CONTACT</a></li>
           </ul>
         </div>
@@ -38,15 +48,62 @@
         <p>Hi, my name is Adam. I am a copywriter and comedian by trade who is dabbling in front-end development, having completed a whirlwind tour of full-stack dev through a coding bootcamp. This is my first full project using Bootstrap: a somewhat sparse portfolio page.</p>
         <a href="#" class="btn btn-default btn-lg">Github</a>
         <a href="#" class="btn btn-default btn-lg">LinkedIn</a>
-        <a href="#contact" class="btn btn-default btn-lg">Twitter</a>
+        <a href="#" class="btn btn-default btn-lg">Twitter</a>
+        <a href="#" class="btn btn-default btn-lg">Tumblr</a>
     </div>
 
-    <div class="container">
+    <div class="container" id="projects">
         <h2>Recent projects</h2>
+        <!-- Project 1 -->
+          <div class="row project-box">
+            <div class="col-xs-5 well">
+              <img src="assets/images/memeories.png" class="img-responsive img-rounded" alt="Memeories">
+            </div>
+            <div class="col-xs-7">
+              <h4 class="text-uppercase">Memeories</h4>
+              <h5 class="text-uppercase text-muted">Web App for creating memes and uploading to Slack</h5>
+              <p>This was a week-long group project undertaken as part of the Maker's Academy Ronin course. It allows users to composite text and graphics into a meme image, which they can then post to a Slack channel, to the amusement of all.</p>
+            </div>
+          </div>
+          <!-- Project 2 -->
+            <div class="row project-box">
+              <div class="col-xs-5 well">
+                <img src="assets/images/argbnb.png" class="img-responsive" alt="ArrrrgBnB">
+              </div>
+              <div class="col-xs-7">
+                <h4 class="text-uppercase">ArrrrgBnB</h4>
+                <h5 class="text-uppercase text-muted">AirBnB clone</h5>
+                <p>This was a week-long group project undertaken as part of the Maker's Academy Ronin course. It recreates the basic functionality of AirBnB.</p>
+              </div>
+            </div>
+          <!-- Project 3 -->
+            <div class="row project-box">
+              <div class="col-xs-5 well">
+                <img src="assets/images/airport.png" class="img-responsive" alt="Airport">
+              </div>
+              <div class="col-xs-7">
+                <h4 class="text-uppercase">Airport Challenge</h4>
+                <h5 class="text-uppercase text-muted">Simulating airpoty takeoff and landing permissions</h5>
+                <p>The result of a weekend-long challenge to write a program in Ruby that keeps track of planes at an airport.</p>
+              </div>
+            </div>
+
     </div>
 
     <div class="container">
       <h2 id="contact">Contact me</h2>
+      <form id="contact-form" role="form">
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="form_message">Your message</label>
+          <textarea id="form_message" name="message" class="form-control" placeholder="Enter your message here" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default disabled">Submit</button>
+
+      </form>
     </div>
 
 
