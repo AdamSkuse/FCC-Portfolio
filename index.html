@@ -8,29 +8,32 @@
   </head>
 
   <style>
-    body {
-      padding-top: 65px;
-    }
 
     .container {
       padding-right: 200px;
       padding-left: 200px;
       padding-bottom: 60px;
+      padding-top: 20px;
     }
 
     .project-box {
       padding-top: 30px;
     }
 
+    .project-box img {
+      border-radius: 15px 50px 30px;
+    }
+
     .well {
-      background-color: #0c9;
-      border-color: #0c9;
+      background-color: #e74c3c;
+      border-color: #e74c3c;
+      border-radius: 15px 50px 30px;
     }
 
 
     .bg-1 {
-    background-color: #993333;
-    color: #ffffff;
+    background-color: #fff;
+    color: #e74c3c;
     }
 
     .bg-2 {
@@ -39,14 +42,101 @@
     }
 
     .bg-3 {
-    background-color: #474e5d;
+    background-color: #e74c3c;
     color: #ffffff;
+    border-radius: 15px 50px 30px;
     }
+
+    .orange-btn {
+      background-color: #e74c3c;
+      color: #fff;
+      border-color: #e74c3c;
+      border-radius: 15px 50px 30px;
+    }
+
+    .orange-btn:hover {
+      background-color: #fff;
+      color: #e74c3c;
+      border-color: #e74c3c;
+    }
+
+
+
+
+  .navbar-default {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px 50px 30px;
+  }
+  .navbar-default .navbar-brand {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+    color: #ffbbbc;
+  }
+  .navbar-default .navbar-text {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #ffbbbc;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #ffbbbc;
+    background-color: #c0392b;
+  }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #ffbbbc;
+    background-color: #c0392b;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #c0392b;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background-color: #c0392b;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+  }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-color: #ecf0f1;
+  }
+  .navbar-default .navbar-link {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-link:hover {
+    color: #ffbbbc;
+  }
+
+  .divider {
+    height: 5px;
+    width:60%;
+    display:block; /* for use on default inline elements like span */
+    margin: 9px auto;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #e74c3c;
+  }
+
+
 
   </style>
 
   <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-static-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -65,19 +155,20 @@
       </div>
     </nav>
 
-<div class="container-fluid bg-1">
-    <div class="container text-center bg-1">
+<div class="container-fluid">
+    <div class="container text-center">
         <h1>Adam's portfolio page</h1>
         <p>Hi, my name is Adam. I am a copywriter and comedian by trade who is dabbling in front-end development, having completed a whirlwind tour of full-stack dev through a coding bootcamp. This is my first full project using Bootstrap: a somewhat sparse portfolio page.</p>
-        <a href="#" class="btn btn-default btn-lg">Github</a>
-        <a href="#" class="btn btn-default btn-lg">LinkedIn</a>
-        <a href="#" class="btn btn-default btn-lg">Twitter</a>
-        <a href="#" class="btn btn-default btn-lg">Tumblr</a>
+        <a href="#" class="btn btn-default btn-md orange-btn">Github</a>
+        <a href="#" class="btn btn-default btn-md orange-btn">LinkedIn</a>
+        <a href="#" class="btn btn-default btn-md orange-btn">Twitter</a>
+        <a href="#" class="btn btn-default btn-md orange-btn">Tumblr</a>
     </div>
+    <span class="divider"></span>
 </div>
 
-<div class="container-fluid bg-2">
-    <div class="container bg-2" id="projects">
+<div class="container-fluid">
+    <div class="container" id="projects">
         <h2>Recent projects</h2>
         <!-- Project 1 -->
           <div class="row project-box">
