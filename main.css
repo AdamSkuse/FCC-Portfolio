@@ -2,7 +2,6 @@ body {
   font-family: 'Merriweather Sans', sans-serif;
 }
 
-
   .container {
     padding-right: 200px;
     padding-left: 200px;
@@ -23,7 +22,6 @@ body {
     border-color: #e74c3c;
     border-radius: 15px 50px 30px;
   }
-
 
   .bg-1 {
   background-color: #fff;
@@ -71,6 +69,41 @@ body {
     color: #ffc300
   }
 
+  .form-orange {
+    border-color: #fff;
+  }
+
+  input::-webkit-input-placeholder {
+  color: #ffc300 !important;
+  }
+
+  input:-moz-placeholder { /* Firefox 18- */
+  color: #ffc300 !important;
+  }
+
+  input::-moz-placeholder {  /* Firefox 19+ */
+  color: #ffc300 !important;
+  }
+
+  input:-ms-input-placeholder {
+  color: #ffc300 !important;
+  }
+
+  textarea::-webkit-input-placeholder {
+  color: #ffc300 !important;
+  }
+
+  textarea:-moz-placeholder { /* Firefox 18- */
+  color: #ffc300 !important;
+  }
+
+  textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: #ffc300 !important;
+  }
+
+  textarea:-ms-input-placeholder {
+  color: #ffc300 !important;
+  }
 
 .navbar-default {
   background-color: #e74c3c;
