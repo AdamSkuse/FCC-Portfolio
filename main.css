@@ -2,15 +2,23 @@ body {
   font-family: 'Merriweather Sans', sans-serif;
 }
 
+h1 {
+font-size: 450%
+}
+
   .container {
     padding-right: 200px;
     padding-left: 200px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     padding-top: 20px;
   }
 
   .project-box {
     padding-top: 30px;
+  }
+
+  .project-box h2 {
+    padding-bottom: 20px;
   }
 
   .project-box img {
@@ -21,22 +29,43 @@ body {
     background-color: #e74c3c;
     border-color: #e74c3c;
     border-radius: 15px 50px 30px;
+    border-style: dashed;
+    border-color: #ffc300;
+    border-width: 2px;
   }
 
-  .bg-1 {
-  background-color: #fff;
-  color: #e74c3c;
+  .page-head {
+    font-family: 'Monoton', cursive;
+    line-height: 1.2;
+    color: #e74c3c;
+    width: 60%;
+    border-style: dashed;
+    border-color: #ffc300;
+    border-width: 5px;
+    border-radius: 15px 50px 30px;
+    margin: 20px auto 40px auto;
+    padding: 20px;
+    text-transform: uppercase;
+
   }
 
-  .bg-2 {
-    background-color: #9fc;
-    color: #fff;
+  .button-box {
+    padding-top: 20px;
   }
 
-  .bg-3 {
+  .justified {
+    text-align: center;
+    margin: 20 auto;
+  }
+
+  .contact-form {
   background-color: #e74c3c;
   color: #ffffff;
   border-radius: 15px 50px 30px;
+  border-style: dashed;
+  border-color: #ffc300;
+  border-width: 5px;
+  margin-bottom: 20px;
   }
 
   .orange-btn {
@@ -66,7 +95,7 @@ body {
   }
 
   .text-muted {
-    color: #ffc300
+    color: #ffc300;
   }
 
   .form-orange {
@@ -111,6 +140,7 @@ body {
   margin-bottom: 0;
   margin-left: 20px;
   margin-right: 20px;
+  padding-right: 40px;
   border-radius: 15px 50px 30px;
 }
 .navbar-default .navbar-brand {
@@ -163,9 +193,20 @@ body {
   color: #ffbbbc;
 }
 
+.footer-orange {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-right: 40px;
+  border-radius: 30px 50px 15px 15px;
+  color: #ffbbbc;
+
+}
+
 .divider {
   height: 5px;
-  width:60%;
+  width: 60%;
   display:block; /* for use on default inline elements like span */
   margin: 9px auto;
   border-radius: 25px;

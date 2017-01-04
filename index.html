@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
   </head>
 
 
@@ -32,21 +33,26 @@
 
 <div class="container-fluid">
     <div class="container text-center">
-        <h1>Adam's portfolio page</h1>
-        <p>Hi, my name is Adam. I am a copywriter and comedian by trade who is dabbling in front-end development, having completed a whirlwind tour of full-stack dev through a coding bootcamp. This is my first full project using Bootstrap: a somewhat sparse portfolio page.</p>
-        <a href="#" class="btn btn-default btn-md orange-btn">Github</a>
-        <a href="#" class="btn btn-default btn-md orange-btn">LinkedIn</a>
-        <a href="#" class="btn btn-default btn-md orange-btn">Twitter</a>
-        <a href="#" class="btn btn-default btn-md orange-btn">Tumblr</a>
+      <div class="page-head">
+        <h1>Behold<br>my<br>stuffs</h1>
+      </div>
+        <p class="justified">Hi, my name is Adam. I am a copywriter and comedian by trade who is dabbling in front-end development, having completed a whirlwind tour of full-stack dev through a coding bootcamp. This is my first full project using Bootstrap: a somewhat sparse portfolio page.</p>
+        <div class="container-fluid button-box">
+          <a href="#" class="btn btn-default btn-md orange-btn">Github</a>
+          <a href="#" class="btn btn-default btn-md orange-btn">LinkedIn</a>
+          <a href="#" class="btn btn-default btn-md orange-btn">Twitter</a>
+          <a href="#" class="btn btn-default btn-md orange-btn">Tumblr</a>
+        </div>
     </div>
     <span class="divider"></span>
 </div>
 
 <div class="container-fluid">
     <div class="container" id="projects">
-        <h2>Recent projects</h2>
+
         <!-- Project 1 -->
           <div class="row project-box">
+            <div><h2>Recent projects</h2></div>
             <div class="col-xs-5 well">
               <img src="assets/images/memeories.png" class="img-responsive img-rounded" alt="Memeories">
             </div>
@@ -81,7 +87,7 @@
 
     </div>
 
-    <div class="container bg-3">
+    <div class="container contact-form">
       <h2 id="contact">Contact me</h2>
       <form id="contact-form" role="form">
         <div class="form-group">
@@ -97,7 +103,9 @@
       </form>
     </div>
 
-
+<footer class="container-fluid text-center footer-orange">
+  <p class="navbar-text">&copy; Adam Skuse</p>
+</footer>
 
 
 
